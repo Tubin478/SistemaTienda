@@ -29,12 +29,13 @@ public class RegistrarProducto {
             System.out.println("Error al registrar producto");
             System.out.println(e);
         } finally {
+            //se cierran las consultas y la conexcion. 
             try {
                 if (statement != null) {
-                    statement.close();
+                    statement.close();//cerrar consulta 
                 }
                 if (conexion != null) {
-                    // No cerramos la conexión aquí porque la clase ConexionDb la maneja
+                    conexion.close(); //cerrar conexion 
                 }
             } catch (SQLException e) {
                 System.out.println("Error al cerrar statement");
