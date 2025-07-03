@@ -9,7 +9,7 @@ public class Main {
         //se realiza una prueba con try catch para evitar que el programa no se ejecute correctamente
         try {
             //registro de prueba
-            registrarProducto.registrarProducto("3020", "cafe", 12.99, 50);
+            registrarProducto.registrarProducto("5015", "azucar", 12.99, 50);
             System.out.println("Registro exitoso");
         } catch (Exception e) {
             System.out.println("Registro no exitoso");

@@ -10,7 +10,7 @@ public class ConexionDb {
     String database = "Tienda";
     String url = "jdbc:mysql://localhost:3306/" + database;
     String usuario = "root";
-    String clave = "Shirley1017.";
+    String clave = "020592";
 
     public Connection obtenerConexion() {
         try {
