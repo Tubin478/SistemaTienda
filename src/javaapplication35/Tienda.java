@@ -29,7 +29,7 @@ public class Tienda {
          
         ConexionDb conexionDb = new ConexionDb();
         Connection conexion = conexionDb.obtenerConexion();
-        
+        // es para verificar que si este leendo la base de datos 
         if (conexion == null) {
         System.out.println("No se pudo conectar a la base de datos.");
         return;
